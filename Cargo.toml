@@ -1,0 +1,15 @@
+[package]
+name = "astro-monitor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.95"
+clap = { version = "4.5.26", features = ["derive"] }
+crossterm = "0.28.1"
+ratatui = "0.29.0"
+rppal = { version = "0.22.1", optional = true }
+lx200-io = { git = "https://github.com/IpFruion/lx200-io", ref = "main", features = [
+  "io",
+] }
+# indicatif = "0.17.9"
